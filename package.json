@@ -2,6 +2,7 @@
   "name": "umut-yaldiz-portfolio",
   "private": true,
   "version": "1.0.0",
+  "description": "A personal portfolio website 100% developed and maintained by autonomous AI agents.",
   "type": "module",
   "scripts": {
     "dev": "vite",
