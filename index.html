@@ -1,11 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Umut Yaldız | Senior Frontend Developer & Team Lead</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<body class="selection:bg-sky-500/30">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <nav class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight">UY<span class="text-sky-600">.</span></a>
+            <div class="flex gap-8">
+                <a href="#experience" class="text-sm font-medium hover:text-sky-600">Experience</a>
+                <a href="#stack" class="text-sm font-medium hover:text-sky-600">Stack</a>
+                <a href="#contact" class="text-sm font-medium hover:text-sky-600">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section-container pt-32 lg:pt-48">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl lg:text-7xl font-extrabold tracking-tight mb-6">
+                    I build <span class="text-sky-600">scalable</span> digital experiences.
+                </h1>
+                <p class="text-xl text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                    Hi, I'm <span class="font-semibold text-slate-900 dark:text-white">Umut Yaldız</span>. I'm a Senior Frontend Developer and Team Lead specializing in crafting high-performance web applications and leading engineering teams to success.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#contact" class="px-6 py-3 bg-sky-600 text-white font-semibold rounded-lg hover:bg-sky-700 transition-colors">Get in Touch</a>
+                    <a href="#experience" class="px-6 py-3 border border-slate-300 dark:border-slate-700 font-semibold rounded-lg hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors">View Experience</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="section-container">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+                Experience
+                <div class="h-px flex-1 bg-slate-200 dark:bg-slate-800"></div>
+            </h2>
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row gap-4 md:gap-12">
+                    <div class="w-32 text-slate-400 font-medium shrink-0">2021 — PRES</div>
+                    <div>
+                        <h3 class="text-xl font-bold">Frontend Team Lead — TechCorp</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mt-2">
+                            Directing a team of 8 developers in migrating a legacy monolith to a micro-frontend architecture using Next.js and Module Federation. Improved performance metrics by 40% and established best practices for TypeScript and Testing.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-4 md:gap-12">
+                    <div class="w-32 text-slate-400 font-medium shrink-0">2018 — 2021</div>
+                    <div>
+                        <h3 class="text-xl font-bold">Senior Frontend Developer — WebSolutions</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mt-2">
+                            Developed complex data visualization dashboards for enterprise clients. Architected a reusable UI component library using Tailwind CSS and React, reducing development time for new features by 30%.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section id="stack" class="section-container">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+                Technical Stack
+                <div class="h-px flex-1 bg-slate-200 dark:bg-slate-800"></div>
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="card font-medium text-center">React / Next.js</div>
+                <div class="card font-medium text-center">TypeScript</div>
+                <div class="card font-medium text-center">Tailwind CSS v4</div>
+                <div class="card font-medium text-center">Node.js</div>
+                <div class="card font-medium text-center">GraphQL</div>
+                <div class="card font-medium text-center">Three.js</div>
+                <div class="card font-medium text-center">AWS / CI/CD</div>
+                <div class="card font-medium text-center">Unit/E2E Testing</div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section-container mb-20">
+            <div class="bg-slate-900 dark:bg-sky-900/20 rounded-2xl p-12 text-center text-white border border-white/5">
+                <h2 class="text-3xl font-bold mb-4">Ready to start a project?</h2>
+                <p class="text-slate-300 mb-8 max-w-lg mx-auto">
+                    I'm always open to discussing new opportunities, frontend architecture, or mentorship.
+                </p>
+                <a href="mailto:hello@umutyaldiz.dev" class="inline-block px-8 py-4 bg-white text-slate-900 font-bold rounded-lg hover:bg-slate-100 transition-transform hover:scale-105">
+                    hello@umutyaldiz.dev
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-10 border-t border-slate-200 dark:border-slate-800">
+        <div class="section-container py-0 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500 gap-4">
+            <p>© 2024 Umut Yaldız. Built with Tailwind CSS v4.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-slate-900 dark:hover:text-white">GitHub</a>
+                <a href="#" class="hover:text-slate-900 dark:hover:text-white">LinkedIn</a>
+                <a href="#" class="hover:text-slate-900 dark:hover:text-white">Twitter</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
