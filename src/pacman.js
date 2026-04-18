@@ -118,8 +118,6 @@ function gameOver(message) {
 function update() {
     if (!gameRunning) return;
     if (frameCount % 12 === 0) {
-        const prevPacman = { x: pacman.x, y: pacman.y };
-
         if (canMove(pacman.x, pacman.y, pacman.nextDir)) pacman.dir = pacman.nextDir;
         if (canMove(pacman.x, pacman.y, pacman.dir)) {
             if (pacman.dir === 0) pacman.x++;
@@ -149,7 +147,6 @@ function update() {
         }
 
         for (const g of ghosts) {
-            const prevGhost = { x: g.x, y: g.y };
             let options = [0, 1, 2, 3].filter(d => canMove(g.x, g.y, d));
             if (options.length > 0) {
                 if (!options.includes(g.dir) || Math.random() < 0.25) {
@@ -161,9 +158,8 @@ function update() {
                 else if (g.dir === 3) g.y--;
             }
 
-            // Check if ghost moved into Pacman OR if they swapped positions
-            if ((g.x === pacman.x && g.y === pacman.y) ||
-                (g.x === prevPacman.x && g.y === prevPacman.y && prevGhost.x === pacman.x && prevGhost.y === pacman.y)) {
+            // Check if ghost moved into Pacman - simplified for exact tile overlap
+            if (g.x === pacman.x && g.y === pacman.y) {
                 gameOver('Ghost caught you! Game Over.');
                 return;
             }
