@@ -114,8 +114,6 @@ function update() {
         if (canMove(pacman.x, pacman.y, pacman.nextDir)) pacman.dir = pacman.nextDir;
         if (canMove(pacman.x, pacman.y, pacman.dir)) {
             if (pacman.dir === 0) pacman.x++;
-            else if (pacman.dir === 1) ny++;
-            if (pacman.dir === 0) pacman.x++;
             else if (pacman.dir === 1) pacman.y++;
             else if (pacman.dir === 2) pacman.x--;
             else if (pacman.dir === 3) pacman.y--;
